@@ -1,0 +1,13 @@
+<html>
+<body>
+<script type="module">
+  import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+  import { parse as uuidParse } from 'https://jspm.dev/uuid'; // 'uuid';
+  import { stringify as uuidStringify } from 'https://jspm.dev/uuid'; // 'uuid';
+  console.log(uuidv4()); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+  window.uuid = uuidv4;
+  window.uuparse = uuidParse;
+  window.uustr = uuidStringify;
+</script>
+</body>
+</html>
